@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital@1&family=Pacifico&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.login-container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  font-family: "Lobster", sans-serif;
+  color: #333;
+  font-weight: 100;
+  font-size: 40px;
+  letter-spacing: 1.3px;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 270px;
+  padding: 13px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  font-size: 14px;
+  outline: none;
+}
+
+label {
+  position: absolute;
+  color: #413e3e;
+  opacity: 0.8;
+  top: 19px;
+  left: 10px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  font-size: 12px;
+}
+input:focus + label,
+input:valid + label {
+  top: 3px;
+  font-size: 10px;
+  color: #413e3e;
+  opacity: 0.8;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3897f0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3897f0;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+p {
+  margin-top: 20px;
+}
